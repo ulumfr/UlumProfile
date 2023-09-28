@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+    /* ===== Colors ===== */
+    --first-color: #E9BF95;
+    --first-color-alt: #E6B584;
+    --title-color: #F4F1F0;
+    --text-color: #C4BCBA;
+    --text-color-light: #918988;
+    --body-color: #1E0E0B;
+    --container-color: #281815;
+    --hover-first: #e2d3c3;
+  
+    /* ========== Font and typography ========== */
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 36px;
+    --h1-font-size: 24px;
+    --h2-font-size: 20px;
+    --h3-font-size: 16px;
+    --normal-font-size: 15px;
+    --small-font-size: 13px;
+    --smaller-font-size: 12px;
+    --tiny-font-size: 10px;
+  
+    /*========== Font weight ==========*/
+    --font-small: 380;
+    --font-medium: 500;
+    --font-semibold: 600;
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+    width: 9.6px;
+    border-radius: 8px;
+    background-color: var(--body-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--first-color);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--hover-first);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+}
+
+h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+}
+
+ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*========== Inti ==========*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 36px 0;
+}
+
+/*========== Buttons ==========*/
+.button, .button2{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--container-color);
+    padding: 10px 14px;
+    font-weight: var(--font-medium);
+    border-radius: 12px;
+    transition: .4s;
+}
+
+.button:hover{
+    color: var(--title-color);
+}
+
+.button2:hover{
+    color: var(--hover-first);
+    background-color: var(--container-color);
+}
+
+/*========== Header & NavBar ==========*/
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--body-color);
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 4px rgba(10, 10, 10, .3);
+    transition: .4s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.nav-logo {
+    width: 40px;
+}
+
+.nav ul li a {
+    color: var(--first-color);
+}
+
+.nav ul li a:hover {
+    color: var(--hover-first);
+    border-bottom: 1px solid var(--hover-first);
+}
+
+.menu-icon {
+    font-size: var(--biggest-font-size);
+    color: var(--first-color);
+    display: none;
+}
+
+/*========== Home ==========*/
+.home {
+    height: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.home_data, .about_description {
+    text-align: justify;
+}
+
+.home_one{
+    display: block;
+    margin-bottom: 3px;
+}
+
+.home_one, .home_pend{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.home_pend {
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+.home_name {
+    font-size: var(--biggest-font-size);
+}
+
+.home_button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.home_button a{
+    margin-right: 50px;
+}
+
+.hero_gambar { 
+    display: flex;
+    justify-content: center;
+}
+
+.home_gambar img {
+    width: 65%;
+    margin-left: 35%;
+}
+
+/*========== About Me ==========*/
+#about {
+    background-color: var(--first-color);
+    width: 100%;
+    /* border-radius: 15px; */
+}
+
+.section .section_title {
+    color: var(--container-color);
+    font-size: var(--biggest-font-size);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* margin-top: 25px; */
+}
+
+.about_gambar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -15px;
+}
+
+.about_gambar img {
+    width: 50%;
+}
+
+.about_box {
+    background-color: var(--first-color-alt);
+    color: var(--container-color);
+    padding: 17px;
+    border-radius: 25px;
+    margin: 0 15px;
+}
+
+.about_info {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 350px;
+    justify-content: center;
+}
+
+.about_title {
+    text-align: center;
+    font-size: var(--medium-font-size);
+    color: var(--container-color);
+    font-weight: var(--font-medium);
+}
+
+.about_title1 {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    color: var(--container-color);
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.about_sub {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-small);
+    color: var(--container-color);
+    display: block;
+    margin-bottom: .35rem;
+    text-align: center;
+}
+
+.about_button {
+    color: var(--body-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4px;
+}
+  
+.about_button:hover {
+    transform: translateX(4px);
+}
+
+.about_button-icon{
+    font-size: 16px;
+    transition: .4s;
+}
+
+.about_button2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about_button2 a {
+    margin: 20px 0 0 30px;
+}
+
+/*========== Project ==========*/
+.section .section_title2 {
+    color: var(--first-color);
+    font-size: var(--biggest-font-size);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#project {
+    padding: 96px 0;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 48px;
+}
+
+.project {
+    border-radius: 10px;
+    border: 2px solid var(--first-color);
+    overflow: hidden;
+}
+
+.project_cover {
+    height: 250px;
+}
+
+.project_cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid var(--first-color);
+}
+
+.project_info {
+    padding: 32px 24px;
+}
+
+.project_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.project_title a {
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+}
+
+.project_title a:hover {
+    color: var(--hover-first-color);
+}
+
+.project_tags {
+    font-size: var(--small-font-size);
+    padding-bottom: 20px;
+}
+
+.project_info p {
+    font-size: var(--font-medium);
+    text-align: justify;
+}
+/*========== Footer ==========*/
+.footer {
+    border-color: var(--first-color);
+    text-align: center;
+    padding: 8px 0 16px;
+    margin: 32px 50px;
+    border-radius: 40px;
+    border-style: dotted;
+}
+
+.footer .contact {
+    margin: 15px;
+}
+
+.footer .contact a i {
+    font-size: var(--h2-font-size);
+}
+.footer .contact a, .credit {
+    margin: 0 10px;
+    color: var(--first-color);
+}
+
+.footer .contact a:hover {
+    color: var(--hover-first);
+}
+
+/*========== Responsive ==========*/
+@media only screen and (max-width: 1200px){
+    .container {
+        width: 85%;
+    }
+
+    .home_name {
+        font-size: var(--h1-font-size);
+    }
+
+    .home_one, .home_pend {
+        font-size: var(--normal-font-size);
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .nav ul {
+        width: 40%;
+    }
+
+    .home_name {
+        font-size: var(--h2-font-size);
+    }
+
+    .home_gambar img {
+        width: 355px;
+        margin-left: 55px;
+    }
+
+    .about_gambar img {
+        width: 60%;
+    }
+
+    .footer {
+        padding: 5px 0 14px;
+        margin: 25px 40px;
+        border-radius: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+        gap: 20px;
+    }
+
+    .nav ul li:last-of-type {
+        padding-bottom: 10px;
+    }
+
+    .nav ul.menu-hidden {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        margin-left: 60%;
+        cursor: pointer;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    .home_data {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .home_gambar img {
+        width: 300px;
+        margin-left: 5px;
+    }
+
+    .about_gambar img {
+        width: 65%;
+    }
+    
+    .home_button a{
+        margin: 0 50px;
+    }
+}
