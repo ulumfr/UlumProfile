@@ -21,10 +21,8 @@
     
             <ul id="menu-list" class="menu-hidden">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#project">Project</a></li>
-                <!-- <li><a href="#hobby">Hobby</a></li>
-                <li><a href="#skill">Skill</a></li> -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -65,14 +63,15 @@
                             I'm currently studying Informatics Engineering at Muhammadiyah University of Malang. I have experience in organizations, serving as the head of the human resources division at DevCom (Developer Community UMM). I am currently focusing more on deepening my skills as a backend developer and also have some proficiency in web development. I have a strong track record of effectively collaborating in various teams and am committed to fulfilling responsibilities. I am self-motivated and always eager to improve my skills and learn new things.
                         </p>
                         <div class="about_button2">
-                            <a href="#hobby" id="hobby" class="button2">Hobby</a>
-                            <a href="#skill" id="skill" class="button2">Skill</a>
+                            <a href="javascript:void(0)" onclick="openPopup('popup-hobby')" id="hobby" class="button2">Hobby</a>
+                            <a href="javascript:void(0)" onclick="openPopup('popup-skill')" id="skill" class="button2">Skill</a>
                         </div>
                     </div> 
                 </div>
-
+                
                 <div class="about_info">
                     <h2 class="about_title1">Academic History</h2>
+
                     <div class="about_box">
                         <h3 class="about_title">SMPM 12 GKB Gresik</h3>
                         <span class="about_sub">Graduated in 2018</span>
@@ -100,6 +99,26 @@
             </div>
         </div>
     </section>
+    
+    <div id="overlay-popup" class="overlay-popup"></div>
+
+    <!-- Popup Hobby -->
+    <div id="popup-hobby" class="popup-container">
+        <div class="popup-title">
+            <h2>Hobby</h2>
+            <a href="javascript:void(0)" onclick="closePopup('popup-hobby')"><i class='bx bx-x'></i></a>
+        </div>
+        <ul class="popup-list" id="hobby-list"></ul>
+    </div>
+
+    <!-- Popup Skill -->
+    <div id="popup-skill" class="popup-container">
+        <div class="popup-title">
+            <h2>Skill</h2>
+            <a href="javascript:void(0)" onclick="closePopup('popup-skill')"><i class='bx bx-x'></i></a>
+        </div>
+        <ul class="popup-list" id="skill-list"></ul>
+    </div>
 
     <section class="section" id="project">
         <div class="container">

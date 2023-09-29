@@ -309,6 +309,58 @@ img {
     margin: 20px 0 0 30px;
 }
 
+/*========== Overlay ==========*/
+.overlay-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+/*========== Popup ==========*/
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--first-color);
+    padding: 5px 20px 20px 20px;
+    border: 1px solid var(--body-color);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999; 
+}
+
+.popup-container .popup-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.popup-container .popup-title h2 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semibold);
+    color: var(--container-color);
+    margin-bottom: 15px;
+}
+
+.popup-container .popup-title a i {
+    color: var(--container-color);
+    font-size: var(--h1-font-size);
+    cursor: pointer;
+}
+
+.popup-container .popup-list {
+    color: var(--container-color);
+    text-align: center;
+}
+
 /*========== Project ==========*/
 .section .section_title2 {
     color: var(--first-color);
