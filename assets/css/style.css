@@ -544,4 +544,17 @@ img {
     .home_button a{
         margin: 0 50px;
     }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 670){
+    .container {
+        max-width: 100%;
+    }
 }
